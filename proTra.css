@@ -1,0 +1,188 @@
+body{
+    background-color: lightblue;
+}
+img{
+    border-radius:8px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+a:link {
+    color: Darkblue;
+}
+a:hover {
+    color: Dodgerblue;
+}
+.lis li{
+  list-style-type:"✧ ";
+  margin-left:100px;
+  color:darkblue;
+  padding: 15px 0;
+}
+.Equi{
+    background-color:darkcyan; 
+    width:300px;
+    height:150px;
+    border: 2px solid darkcyan;
+}
+.tt{
+    background-color: darkturquoise;
+    font-size: 23px;
+}
+.tt1{
+    background-color: dodgerblue;
+    font-size: 23px;
+}
+.Fun{
+    background-color: purple; 
+    width:300px;
+    height:150px;
+    border: 2px solid purple;
+}
+.tt2{
+    background-color: darkmagenta;
+    font-size: 23px;
+}
+.tt3{
+    background-color:violet;
+    font-size: 23px;
+}
+.tt4{
+    font-size:50px;
+}
+.tt5{
+    font-size:25px;
+}
+.tt6{
+    font-size: 40px;
+}
+.tit{
+    color:red;
+    font-size: 50px;
+}
+.sub{
+    color: darkblue;
+    font-size: 23px;
+}
+.tab{
+    background-color: #525252;
+    width: 85%;
+    align-items: center;
+    text-align: center;
+}
+.tab1{
+    background-color: darkturquoise;
+}
+.tab2{
+    background-color: paleturquoise;
+}
+.tab3{
+    color: black;
+    font-size: 40px;
+}
+.tab4{
+    color: black;
+    font-size: 25px;
+    width: 50%;
+}
+.tab5{
+    background-color: lightgray;
+    color: black;
+    font-size: 20px;
+}
+.tab6{
+    width: 100%;
+    text-align: center;
+}
+.im1{
+    width:250px; 
+    height:250px;
+}
+.im2{
+    width:250px; 
+    height:150px;
+}
+.im3{
+    width:200px; 
+    height:150px;
+    padding:5px;
+}
+.im4{
+    width:170px; 
+    height:150px;
+}
+.im5{
+    width:160px; 
+    height:150px;
+}
+.im6{
+    width:150px; 
+    height:150px;
+}
+.im7{
+    width:150px; 
+    height:200px;
+}
+.im8{
+    width:180px; 
+    height:150px;
+}
+.im9{
+    width:300px; 
+    height:150px;
+}
+.im10{
+    width: 200px;
+    height: 200px;
+}
+.im11{
+    width: 260px;
+    height: 250px;
+}
+.im12{
+    width: 170px;
+    height: 210px;
+}
+.im13{
+    width: 300px;
+    height: 300px;
+}
+.im14{
+    width: 950px;
+    height: 1500px;
+}
+.boton{
+    background-color: rgb(168, 163, 163);
+}
+.ventana{
+    display: none;
+    align-items: center;
+    height: 120px;
+    width: 540px;
+    font-size: 15px;
+    background-color: rgb(179, 182, 184);
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+@keyframes animacion {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+}            
+@keyframes animacion2 {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+}
+.aparecer{
+    opacity: 0;
+    animation: animacion2 2s ease forwards;
+}
