@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <title> PROYECTO  </title>
+        <link rel="stylesheet" href="proTra.css">
+        <style>
+            .borrar {
+              opacity: 1;
+              animation: animacion 2s ease forwards;
+            }
+            .spinner {
+            width: 44px;
+            height: 44px;
+            animation: spinner-y0fdc1 2s infinite ease;
+            transform-style: preserve-3d;
+        }
+
+        .spinner > div {
+            background-color: rgba(0,77,255,0.2);
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            border: 2px solid #004dff;
+        }
+
+        .spinner div:nth-of-type(1) {
+            transform: translateZ(-22px) rotateY(180deg);
+        }
+
+        .spinner div:nth-of-type(2) {
+            transform: rotateY(-270deg) translateX(50%);
+            transform-origin: top right;
+        }
+
+        .spinner div:nth-of-type(3) {
+            transform: rotateY(270deg) translateX(-50%);
+            transform-origin: center left;
+        }
+
+        .spinner div:nth-of-type(4) {
+            transform: rotateX(90deg) translateY(-50%);
+            transform-origin: top center;
+        }
+
+        .spinner div:nth-of-type(5) {
+            transform: rotateX(-90deg) translateY(50%);
+            transform-origin: bottom center;
+        }
+
+        .spinner div:nth-of-type(6) {
+            transform: translateZ(22px);
+        }
+
+        @keyframes spinner-y0fdc1 {
+            0% {
+                transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+            }
+            50% {
+                transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+            }
+            100% {
+                transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+            }
+        }
+        </style>
+        <script src="ventana.js"></script>
+    </head>
+    <body class="aparecer">
+        <table class="tab6">
+            <tr>
+                <td class="tit"> ¿CÓMO ELEGIR UNA COMPUTADORA?</td>
+                <td><img class="im3" src="compu2.png" ></td>
+            </tr>
+            <tr>
+                <td class="sub"> Para comenzar debes de saber que hay 2 tipos de computadoras,
+                    PC(Computadora de escritorio) y laptop (computadora portátil). <br>
+                </td>
+            </tr>
+        </table><br>
+        <table class="tab6">
+            <tr>
+                <td><img class="im10" src="compu1.6.png" id="DCurioso"></td>
+                <td>
+                    <table class="Equi">
+                        <tr> <td class="tt1"> EQUIPO </td> </tr>
+                        <tr> <td class="tt"><a onclick="Cambiar(event)" href="equipoPC.html">
+                            <input type="button" value="*PC 🖥️" readonly class="inputEquipo">
+                        </a></td> </tr>
+                        <tr> <td class="tt"><a onclick="Cambiar(event)" href="equipoLaptop.html">
+                            <input type="button" value="*LAPTOP 💻" readonly class="inputEquipo">
+                        </a></td> </tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="Fun">
+                        <tr> <td class="tt2">FUNCIONAMIENTO </td> </tr>
+                        <tr> <td class="tt3"><a onclick="Cambiar(event)" href="funcionamientoPC.html">
+                            <input type="button" value="*PC 🖥️" readonly class="inputEquipo">
+                        </a></td><tr>
+                        <tr> <td class="tt3"><a onclick="Cambiar(event)" href="funcionamientoLaptop.html">
+                            <input type="button" value="*LAPTOP 💻" readonly class="inputEquipo"></a> </td><tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <center><br><br>
+            <a onclick="Cambiar(event)" href="Otras.html" class="tt5">
+                <input type="button" value="🌐 Explora más sobre las computadoras 🖱️" readonly class="inputOtras">
+            </a><br><br><br>
+            <center>
+                <div class="spinner">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </center><br><br>
+        <table>
+            <tr>
+                <td class="menuTabla">
+                    <a href="pro2.html">
+                        <input type="button" value="¿Qué debes saber de las computadoras?" readonly class="inputMenu">
+                        </a>
+                </td>
+                <td class="menuTabla">
+                    <a href="pro2.1.html">
+                        <input type="button" value="¿Cómo elegir una computadora?" readonly class="inputMenu1">
+                    </a>
+                </td>
+                <td class="menuTabla">
+                    <a href="pro2.2.html">
+                        <input type="button" value="¿Cómo utilizar una computadora?" readonly class="inputMenu">
+                    </a>
+                </td>
+            </tr>
+        </table><br><br>
+        <a href="Encuesta.html">
+            <input type="button" value="🚀Encuesta de satisfacción!!👍" readonly class="inputEncuesta">
+        </a>
+        </center>
+    </body> 
+</html>

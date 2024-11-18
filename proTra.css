@@ -1,5 +1,6 @@
 body{
-    background-color: lightblue;
+    background-color: #add8e6;
+    text-align: center;
 }
 img{
     border-radius:8px;
@@ -30,7 +31,7 @@ a:hover {
 }
 .tt1{
     background-color: dodgerblue;
-    font-size: 23px;
+    font-size: 27px;
 }
 .Fun{
     background-color: purple; 
@@ -44,7 +45,7 @@ a:hover {
 }
 .tt3{
     background-color:violet;
-    font-size: 23px;
+    font-size: 27px;
 }
 .tt4{
     font-size:50px;
@@ -151,7 +152,7 @@ a:hover {
     height: 1500px;
 }
 .boton{
-    background-color: rgb(168, 163, 163);
+    background-color: #a8a3a3;
 }
 .ventana{
     display: none;
@@ -159,7 +160,7 @@ a:hover {
     height: 120px;
     width: 540px;
     font-size: 15px;
-    background-color: rgb(179, 182, 184);
+    background-color: #b3b6b8;
     padding: 5px;
     border: 1px solid black;
     border-radius: 15px;
@@ -182,7 +183,93 @@ a:hover {
         opacity: 1;
       }
 }
+.OtrosRecursos{
+    width: 90%;
+}
+.OtrosRecursosTD{
+    width: 33%;
+    text-align: center;
+}
 .aparecer{
     opacity: 0;
     animation: animacion2 2s ease forwards;
+}
+.menuTabla{
+    width:500px;
+    text-align: center;
+}
+.inputMenu{
+    font-size: 25px;
+    width: 100%;
+    height: 75px;
+    border-color: #030668;
+    box-shadow: none;
+    color: #030668;
+}
+.inputMenu1{
+    background-color: lightblue;
+    font-size: 35px;
+    width: 100%;
+    height: 75px;
+    border-color: #030668;
+    border-top: none;
+    border-right:none;
+    border-left: none;
+    box-shadow: none;
+    color: #030668;
+}
+.inputEquipo{
+    background-color:transparent;
+    width: 97%;
+    height: 40px;
+    border:none;
+    color: #05173e;
+    font-family: inherit;
+    padding: 5px 5px;
+    font-weight:10;
+    font-size: 25px;
+    border-radius: 0.4em;
+    cursor: pointer;
+    box-shadow: none;
+}
+.inputEncuesta{
+    background-color:#2b9cf3;
+    color: #05173e;
+    font-family: inherit;
+    padding: 5px 5px;
+    font-weight:10;
+    font-size: 25px;
+    border-radius: 0.4em;
+    cursor: pointer;
+    box-shadow: 3px 3px;
+}
+.inputOtras{
+    background-color:#9ecdf0;
+    color: #05173e;
+    font-family: inherit;
+    padding: 5px 5px;
+    font-weight:10;
+    font-size: 25px;
+    border-radius: 0.4em;
+    cursor: pointer;
+    box-shadow: 3px 3px;
+}
+input{
+    background: #74bad1;
+    font-family: inherit;
+    padding: 5px 5px;
+    font-weight:10;
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 3px 3px;
+    cursor: pointer;
+}
+input:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+input:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
 }
