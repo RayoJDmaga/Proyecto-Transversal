@@ -169,3 +169,9 @@ document.getElementById('o').style.display='block';
 function O_cerrar() {
 document.getElementById('o').style.display = 'none';
 }
+document.addEventListener("DOMContentLoaded", () => {
+    var numRandom = Math.floor(Math.random() * 21) + 1;
+    const NombreIMG = `compu2.${numRandom}.png`;
+    const imgElement = document.getElementById("DCurioso");
+    imgElement.src = NombreIMG;
+})
