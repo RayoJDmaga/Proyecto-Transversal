@@ -20,8 +20,9 @@ a:hover {
   padding: 15px 0;
 }
 .Equi{
+    align-content: center;
     background-color:darkcyan; 
-    width:300px;
+    width:55%;
     height:150px;
     border: 2px solid darkcyan;
 }
@@ -35,7 +36,7 @@ a:hover {
 }
 .Fun{
     background-color: purple; 
-    width:300px;
+    width:55%;
     height:150px;
     border: 2px solid purple;
 }
@@ -62,7 +63,7 @@ a:hover {
 }
 .sub{
     color: darkblue;
-    font-size: 23px;
+    font-size: 140%;
 }
 .tab{
     background-color: #525252;
@@ -93,6 +94,15 @@ a:hover {
 .tab6{
     width: 100%;
     text-align: center;
+}
+.tab7{
+    background-color: violet;
+}
+.tab8{
+    background-color:#d3b6f7;
+}
+.tab9{
+    background-color: #dddbdd;
 }
 .im1{
     width:250px; 
@@ -152,16 +162,17 @@ a:hover {
     height: 1500px;
 }
 .im15{
-    width: 90%;
+    width: 70%;
 }
 .boton{
     background-color: #a8a3a3;
 }
 .ventana{
     display: none;
+    text-align: center;
     align-items: center;
-    height: 120px;
-    width: 540px;
+    height: auto;
+    width: 98%;
     font-size: 15px;
     background-color: #b3b6b8;
     padding: 5px;
@@ -169,6 +180,7 @@ a:hover {
     border-radius: 15px;
     margin-top: 12px;
     margin-bottom: 10px;
+    box-shadow: 3px 3px;
 }
 @keyframes animacion {
       from {

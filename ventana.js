@@ -169,8 +169,41 @@ document.getElementById('o').style.display='block';
 function O_cerrar() {
 document.getElementById('o').style.display = 'none';
 }
+//Funciones de ventanas Funcionamiento-PC
+function FPC() {
+document.getElementById('fpc').style.display='block';
+}
+function FPC_cerrar() {
+document.getElementById('fpc').style.display = 'none';
+}
+function FPC1() {
+document.getElementById('fpc1').style.display='block';
+}
+function FPC1_cerrar() {
+document.getElementById('fpc1').style.display = 'none';
+}
+function FPC2() {
+document.getElementById('fpc2').style.display='block';
+}
+function FPC2_cerrar() {
+document.getElementById('fpc2').style.display = 'none';
+}
+function FPC3() {
+document.getElementById('fpc3').style.display='block';
+}
+function FPC3_cerrar() {
+document.getElementById('fpc3').style.display = 'none';
+}
+function FPC4() {
+document.getElementById('fpc4').style.display='block';
+}
+function FPC4_cerrar() {
+document.getElementById('fpc4').style.display = 'none';
+}
+
+//Cambia las imágenes random
 document.addEventListener("DOMContentLoaded", () => {
-    var numRandom = Math.floor(Math.random() * 25) + 1;
+    var numRandom = Math.floor(Math.random() * 100) + 1;
     const NombreIMG = `compu2.${numRandom}.png`;
     const imgElement = document.getElementById("DCurioso");
     imgElement.src = NombreIMG;
