@@ -1,0 +1,691 @@
+/*Tema por defecto*/
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #add8e6;
+    text-align: center;
+}
+
+/*Colores para el tema interesante*/
+/* body.tema-interesante { background-color: #add8e6;} */
+#interesante{
+    background: linear-gradient(to right, #4fbef1, #add8e6, #4ed9d4 );
+    color: black;
+    border-radius: 10px;
+}
+
+/*Colores para el tema formal*/
+body.tema-formal { background-color: white; color: white;}
+#formal{
+    background: linear-gradient(to right, #676767, #ffffff, #676767 );
+    color: black;
+    border-radius: 10px;
+}
+body.tema-formal .tit{ color: red;}
+body.tema-formal .sub{ color: #000000;}
+body.tema-formal .Equi, body.tema-formal .Fun{ background-color: #323232; border: 2px solid #000000;}
+body.tema-formal .tt1, body.tema-formal .tt2{ background-color: #393939; color: #ffffff;}
+body.tema-formal .tt, body.tema-formal .tt3,  body.tema-formal .inputEquipo{ background-color: #949494; color: #000000;}
+body.tema-formal .inputOtras{ background-color: #000000; color: white;}
+body.tema-formal .inputMenu{ background-color: #b7b7b7; color: black; border-color: black;}
+body.tema-formal .inputMenu1{ background-color: white; color: black; border-color: black;}
+body.tema-formal .inputEncuesta{ background-color: #4d6686; color: black; border-color: black;}
+body.tema-formal .inputFlot{ background-color: #c8c8c8; color: #001357; box-shadow: #000000;}
+body.tema-formal .preguntarIA{background-color: #032a56;}
+
+/*Colores para el tema oscuro*/
+body.tema-oscuro { background-color: #00051e;
+ color: white;}
+#oscuro{
+    background: linear-gradient(to right, #00073a, #101010, #000559 );
+    color: white;
+    border-radius: 10px;
+}
+body.tema-oscuro .tit{ color: #a30000;}
+body.tema-oscuro .sub{ color: #d8d8d8;}
+body.tema-oscuro .Equi, body.tema-oscuro .Fun{ background-color: #010915; border: 2px solid #ffffff;}
+body.tema-oscuro .tt1, body.tema-oscuro .tt2{ background-color: #07123d; color: #e6eef3;}
+body.tema-oscuro .tt, body.tema-oscuro .tt3,  body.tema-oscuro .inputEquipo{ background-color: #949494; color: #000000;}
+body.tema-oscuro .inputOtras{ background-color: #0d1e61; color: #c4c4c4;}
+body.tema-oscuro .inputMenu{ background-color: #000000; color: #ebf4ff; border-color: #828283;}
+body.tema-oscuro .inputMenu1{ background-color: #00051e; color: #ffffff; border-color: #828283;}
+body.tema-oscuro .inputEncuesta{ background-color: #252528; color: #bebebe; border-color: #2b2b2b;}
+body.tema-oscuro .inputFlot{ background-color: #00418b; color: #ffffff; box-shadow: #000000;}
+body.tema-oscuro .preguntarIA{background-color: #0050ac; color: #ffffff;}
+
+
+/*Colores para el tema daltónico*/
+body.tema-daltonico { background-color: #cd6e25; }
+#daltonico{
+    background: linear-gradient(to right, #8a1ed1,#e47e17, #7519e7 );
+    color: white;
+    border-radius: 10px;
+}
+body.tema-daltonico .tit{ color: #004bc5;}
+body.tema-daltonico .sub{ color: #2443ee;}
+body.tema-daltonico .Equi, body.tema-daltonico .Fun{ background-color: #1c003d; border: 2px solid #ffffff;}
+body.tema-daltonico .tt1, body.tema-daltonico .tt2{ background-color: #025133; color: #f3f3f3;}
+body.tema-daltonico .tt, body.tema-daltonico .tt3,  body.tema-daltonico .inputEquipo{ background-color: #7d137b; color: #ffffff;}
+body.tema-daltonico .inputOtras{ background-color: #072dc7; color: #ffffff;}
+body.tema-daltonico .inputMenu{ background-color: #c90000; color: #000000; border-color: #014006;}
+body.tema-daltonico .inputMenu1{ background-color: #cd7125; color: #000000; border-color: #5916a1;}
+body.tema-daltonico .inputEncuesta{ background-color: #4100b1; color: #ffffff; border-color: #2b2b2b;}
+body.tema-daltonico .inputFlot{ background-color: #072dc7; color: #ffffff; box-shadow: #000000;}
+body.tema-daltonico .preguntarIA{background-color: #026acd; color: #ffffff;}
+
+
+/*Spinner (Cuadrito girando)*/
+.spinner {
+    width: 40px;
+    height: 40px;
+    animation: spinner-y0fdc1 2s infinite ease;
+    transform-style: preserve-3d;
+}
+.spinner > div {
+    background-color: #004dff33;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    border: 2px solid #004dff;
+}
+
+.spinner div:nth-of-type(1) {
+    transform: translateZ(-22px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+    transform: rotateY(-270deg) translateX(50%);
+    transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+    transform: rotateY(270deg) translateX(-50%);
+    transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+    transform: rotateX(90deg) translateY(-50%);
+    transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+    transform: rotateX(-90deg) translateY(50%);
+    transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+    transform: translateZ(22px);
+}
+
+@keyframes spinner-y0fdc1 {
+    0% {
+        transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+    }
+    50% {
+        transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+    }
+    100% {
+        transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+    }
+}
+
+/*Colores para el spinner(Cuadrito girando)*/
+body.tema-formal .spinner >div{ background-color: #56565642; border:2px solid #000000;}
+body.tema-oscuro .spinner >div{ background-color: #1f303e3e; border:2px solid #ffffff;}
+body.tema-daltonico .spinner >div{ background-color: #cd38fa56; border:2px solid #630091;}
+
+
+/*Estilos por defecto 👻*/
+img{
+    border-radius:8px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+a:link {
+    color: #00008b;
+}
+a:hover {
+    color: #1e90ff;
+}
+.lis li{
+  list-style-type:"✧ ";
+  margin-left:100px;
+  color:darkblue;
+  padding: 15px 0;
+}
+.Compo{
+    align-content: center;
+    background-color:#ef841a; 
+    width:55%;
+    height:150px;
+    border: 2px solid #ef841a;
+}
+.Equi{
+    background-color:darkcyan; 
+    width:80%;
+    height:70%;
+    border: 2px solid darkcyan;
+}
+.tt{
+    background-color: #00ced1;
+    font-size: 23px;
+}
+.tt1{
+    background-color: dodgerblue;
+    font-size: 27px;
+}
+.Fun{
+    background-color: #800080; 
+    width:75%;
+    height:70%;
+    border: 2px solid purple;
+}
+.tt2{
+    background-color: darkmagenta;
+    font-size: 23px;
+}
+.tt3{
+    background-color:#ee82ee;
+    font-size: 27px;
+}
+.tt4{
+    font-size:50px;
+}
+.tt5{
+    font-size:25px;
+}
+.tt6{
+    font-size: 40px;
+}
+.tit{
+    display: grid;
+    justify-self: end;
+    color:red;
+    font-size: 300%;
+}
+.sub{
+    color: darkblue;
+    font-size: 180%;
+}
+.tab{
+    background-color: #525252;
+    width: 85%;
+    align-items: center;
+    text-align: center;
+}
+.tab1{
+    background-color: darkturquoise;
+}
+.tab2{
+    background-color: #afeeee;
+}
+.tab3{
+    color: black;
+    font-size: 40px;
+}
+.tab4{
+    color: black;
+    font-size: 25px;
+    width: 50%;
+}
+.tab5{
+    background-color: lightgray;
+    color: black;
+    font-size: 20px;
+}
+.tab6{
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    place-items: center;
+}
+.tabb6{
+    display: grid;
+    gap: 10px;
+    grid-auto-flow: column;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    place-items: center;
+}
+.tab7{
+    background-color: violet;
+}
+.tab8{
+    background-color:#d3b6f7;
+}
+.tab9{
+    background-color: #dddbdd;
+}
+.im1{
+    width:250px; 
+    height:250px;
+}
+.im2{
+    width:250px; 
+    height:150px;
+}
+.im3{
+    width:50%; 
+    height:50%;
+}
+.im4{
+    width:170px; 
+    height:150px;
+}
+.im5{
+    width:160px; 
+    height:150px;
+}
+.im6{
+    width:150px; 
+    height:150px;
+}
+.im7{
+    width:150px; 
+    height:200px;
+}
+.im8{
+    width:180px; 
+    height:150px;
+}
+.im9{
+    width:300px; 
+    height:150px;
+}
+.im10{
+    display: grid;
+    justify-self: center;
+    width: 40%;
+    height: 85%;
+}
+.im10A{
+    display: none;
+    justify-self: center;
+    width: 40%;
+    height: 85%;
+}
+.im11{
+    width: 260px;
+    height: 250px;
+}
+.im12{
+    width: 170px;
+    height: 210px;
+}
+.im13{
+    width: 300px;
+    height: 300px;
+}
+.im14{
+    width: 950px;
+    height: 1500px;
+}
+.im15{
+    width: 70%;
+}
+.boton{
+    background-color: #a8a3a3;
+}
+.ventana{
+    display: none;
+    text-align: center;
+    align-items: center;
+    height: auto;
+    width: 98%;
+    font-size: 90%;
+    background-color: #b3b6b8;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px;
+}
+.venFlot{
+    display: none;
+}
+@keyframes animacion {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+}            
+@keyframes animacion2 {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+}
+.OtrosRecursos{
+    width: 90%;
+}
+.OtrosRecursosTD{
+    display: grid;
+    width:100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-items: start;
+    /* place-items: center; */
+}
+.aparecer{
+    opacity: 0;
+    animation: animacion2 2s ease forwards;
+}
+.menuTabla{
+    width:30%;
+    text-align: center;
+}
+.inputMenu{
+    font-size: 25px;
+    width: 100%;
+    height: 75px;
+    border-color: #030668;
+    box-shadow: none;
+    color: #030668;
+}
+.inputMenu1{
+    background-color: lightblue;
+    font-size: 35px;
+    width: 100%;
+    height: 75px;
+    border-color: #030668;
+    border-top: none;
+    border-right:none;
+    border-left: none;
+    box-shadow: none;
+    color: #030668;
+}
+.inputEquipo{
+    background-color:transparent;
+    width: 97%;
+    height: 40px;
+    border:none;
+    color: #05173e;
+    font-family: inherit;
+    padding: 5px 5px;
+    font-weight:10;
+    font-size: 25px;
+    border-radius: 0.4em;
+    cursor: pointer;
+    box-shadow: none;
+}
+.inputEncuesta{
+    background-color:#2b9cf3;
+    color: #05173e;
+    font-family: inherit;
+    padding: 5px 5px;
+    font-weight:10;
+    font-size: 25px;
+    border-radius: 0.4em;
+    cursor: pointer;
+    box-shadow: 3px 3px;
+}
+.inputOtras{
+    background-color:#9ecdf0;
+    color: #05173e;
+    font-family: inherit;
+    padding: 5px 5px;
+    font-weight:10;
+    font-size: 25px;
+    border-radius: 0.4em;
+    cursor: pointer;
+    box-shadow: 3px 3px;
+}
+.inputFlot{
+    text-align: center;
+    background-color: #62aeff;
+    font-family: inherit;
+    font-size: 20px;
+    border-color: #04445a;
+    border: none;
+    color: #01071d;
+    box-shadow: 0 4px 8px #00000095;
+}
+input{
+    background: #74bad1;
+    font-family: inherit;
+    padding: 5px 5px;
+    font-weight:10;
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 3px 3px;
+    cursor: pointer;
+}
+input:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+input:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+button:hover {
+    transform: translate(-0.07em, -0.07em);
+    box-shadow: 0.15em 0.15em;
+}
+button:active {
+    transform: translate(0.07em, 0.07em);
+    box-shadow: 0.05em 0.05em;
+}
+.menu-flotante {
+  position: fixed;
+  top: 5px;
+  right: 30px;
+  z-index: 9999;
+  width: 15%;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.menu-flotante a {
+  color: #080db7;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+.menu-flotante a:hover {
+  color: #02790e;
+}
+
+/*Estilos para la ventana emergente de la IA*/
+/* .ventanaIA{
+    position: fixed;
+    bottom: 30% ;
+    right: 60px;
+    z-index:9999;
+    padding: 10px;
+}
+.preguntarIA{
+    text-align: center;
+    background-color: #000e79;
+    font-family: inherit;
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    color: #eaf6ff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+} */
+.ventanaIA {
+  position: fixed;
+  bottom: 30%;
+  right: 60px;
+  z-index: 9999;
+  place-items: center;
+}
+.preguntarIA {
+  background-color: #000965;
+  color: #ffffff;
+  font-size: 20px;
+  font-family:'Times New Roman', Times, serif;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.panelIA {
+  width: 110%;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.cabeceraIA {
+  background-color: #000846;
+  color: #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cuerpoIA {
+  padding: 10px;
+  background-color: #767676;
+}
+.cuerpoIA textarea {
+  width: 90%;
+  height: 65px;
+  resize: none;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.enviarIA {
+  background-color:#000846;
+  color: #eaf6ff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.respuestaIA {
+  margin-top: 10px;
+}
+.cerrarIA {
+  background: none;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+/* @media (max-width:1080px) and (max-height:2460px){
+  .tit{
+    color: #080db7;
+    font-size: 400% ;
+  }
+  .sub{ font-size: 200%; }
+  .im3{ width: 120%; height: auto;}
+  .im10 {
+    width: 30%;
+    height: 90%;
+  }
+  .tab6{
+    height: auto;
+  }
+  .tabb6{
+    width: 100%;
+    gap: 15px;
+    grid-auto-flow: row;
+    transform: scaleY(-1);
+  } .tabb6>*{transform: scaleY(-1);}
+  .OtrosRecursosTD{
+    height: 100%;
+    place-items: center;
+  }
+  .Equi{ width: 50%; height: 100%; font-size: 230%;}
+  .Fun{ width: 50%; height: 100%; font-size: 230%;}
+  .menuTabla{
+    width: 100%;
+    display: table;
+  }
+} Esto era para que funcionara en mi dispositivo pero lo quité xD*/
+/*Código para cambiar dependiendo del tipo de pantalla, para tablet no funciona muy bien XD*/
+
+
+/*Celuares*/
+@media (max-width:820px), (max-aspect-ratio: 6/8) {
+  .tit{
+    /* color: #080db7; color para identificar visualmente el tipo de dispositivo*/
+    font-size: 250% ;
+  }
+  .sub{ font-size: 200%; }
+  .im3{ width: 120%; height: auto;}
+  .im10 {
+    width: 30%;
+    height: 90%;
+  }
+  .tab6{
+    height: auto;
+  }
+  .tabb6{
+    width: 100%;
+    gap: 15px;
+    grid-auto-flow: row;
+    transform: scaleY(-1);
+  } .tabb6>*{transform: scaleY(-1);}
+  .OtrosRecursosTD{
+    height: 100%;
+    place-items: center;
+  }
+  .Equi{ width: 50%; height: 100%; font-size: 230%;}
+  .Fun{ width: 50%; height: 100%; font-size: 230%;}
+  .menuTabla{
+    width: 100%;
+    display: table;
+  }
+  .menu-flotante{
+    width: 30%;
+  }
+}
+
+
+/*Tablets*/
+@media (min-aspect-ratio: 6/8) and (max-aspect-ratio: 9/8) {
+  .tit{
+    /* color: #00740c; Color para identificar visualmente el tipo de dispositivo*/
+    width: 80%;
+    font-size: 300% ;
+    justify-self: end;
+  }
+  .sub{ font-size: 170%; }
+   .tab6{
+    height: auto;
+  }
+   .OtrosRecursosTD{
+    height: 100%;
+    /* align-items: start;
+    justify-items: start; */
+  }
+  .im3{
+    width: 100%;
+  }
+  .im10 {
+    display: none;
+  }
+  .im10A{
+    display: block;
+    margin-top: 5%;
+    width: 30%;
+    height: auto;
+  }
+  .Equi{ width: 80%; height: 100%; font-size: 230%;}
+  .Fun{ width: 80%; height: 100%; font-size: 230%;}
+  .menuTabla{
+    width: 100%;
+    display: table;
+  }
+  .menu-flotante{
+    width: 22%;
+  }
+}
