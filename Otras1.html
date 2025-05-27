@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>LINKS EXTERNOS</title>
+    <link rel="stylesheet" href="proTra.css">
+    <style>
+        .borrar {
+              opacity: 1;
+              animation: animacion 2s ease forwards;
+            }
+    </style>
+</head>
+<body class="aparecer">
+    <div class="menu-flotante">
+        <input value="Perzonalizar 🖌️▼" readonly onclick="AbrirMenu()" class="inputFlot"></input>
+        <button id="interesante" onclick="cambiarTema('interesante')" class="inputFlot venFlot">Interesante</button>
+        <button id="formal" onclick="cambiarTema('formal')" class="inputFlot venFlot">Formal</button>
+        <button id="oscuro" onclick="cambiarTema('oscuro')" class="inputFlot venFlot">Oscuro</button>
+        <button id="daltonico" onclick="cambiarTema('daltonico')" class="inputFlot venFlot">Daltónico</button>
+        <input id="quitar" value="Cerrar ▲" readonly onclick="CerrarMenu()" class="inputFlot venFlot"></input>
+    </div>    
+
+    <header>
+        <h1>Otros Recursos</h1>
+    </header>
+    <center>
+        <img class="im15" src="Imagenes/CT-Windows.png"><br>
+        <img class="im15" src="Imagenes/CT-Windows1.png"><br>
+        <img class="im15" src="Imagenes/CT-Windows2.png"><br>
+        <img class="im15" src="Imagenes/CT-Windows3.png"><br>
+        <img class="im10" src="Imagenes/Datos_Curiosos/compu2.001.png" id="DCurioso">
+        <br>
+        <a href="pro2.html" class="tt4">
+            <input type="button" value="Regresar↩" readonly class="inputOtras"></a><br><br>
+    </center>
+        <div class="ventanaIA">
+            <button class="preguntarIA" onclick="mostrarVentana()">💬 Preguntarle a la IA</button><br><br>
+            <div id="ventanaIA" class="panelIA" style="display: none;">
+                <div class="cabeceraIA">
+                    <h3 style="margin-left: 17%;"> Asistente de IA</h3>
+                    <button class="cerrarIA" onclick="cerrarVentana()">✖</button>
+                </div>
+                <div class="cuerpoIA">
+                    <textarea id="pregunta" placeholder="Escribe tu pregunta aquí..."></textarea>
+                    <button class="enviarIA" onclick="preguntarIA()">Enviar</button>
+                    <div id="respuesta" class="respuestaIA"></div>
+                </div>
+            </div>
+        </div>
+
+    <a href="Encuesta.html">
+        <input type="button" value="🚀Encuesta de satisfacción!!👍" readonly class="inputEncuesta">
+    </a>
+    <script src="ventana.js"></script>
+</body>
+</html>

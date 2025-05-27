@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>EQUIPO *pc</title>
+        <link rel="stylesheet" href="proTra.css">
+        <style>
+            .borrar {
+              opacity: 1;
+              animation: animacion 2s ease forwards;
+            }
+        </style>
+    </head>
+    <body class="aparecer">
+        <div class="menu-flotante">
+            <input value="Perzonalizar 🖌️▼" readonly onclick="AbrirMenu()" class="inputFlot"></input>
+            <button id="interesante" onclick="cambiarTema('interesante')" class="inputFlot venFlot">Interesante</button>
+            <button id="formal" onclick="cambiarTema('formal')" class="inputFlot venFlot">Formal</button>
+            <button id="oscuro" onclick="cambiarTema('oscuro')" class="inputFlot venFlot">Oscuro</button>
+            <button id="daltonico" onclick="cambiarTema('daltonico')" class="inputFlot venFlot">Daltónico</button>
+            <input id="quitar" value="Cerrar ▲" readonly onclick="CerrarMenu()" class="inputFlot venFlot"></input>
+        </div>    
+
+        <center>
+            <table class="tab">
+                <tr class="tab1">
+                    <td class="tab3"> Equipo -</td>
+                    <td class="tab3">PC
+                    </td>
+                </tr>
+                <tr class="tab2">
+                        <td class="tab4"> NOMBRE</td>
+                        <td class="tab4"> IMÁGEN</td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Monitor/Pantalla <br><br>
+                        <input type="button" value="Descripción ➪" onclick="Moni()" class="boton"><br>
+                        <div id="moni" class="ventana">
+                            <p>
+                                Un monitor es un periférico que muestra la información de forma gráfica de una computadora.
+                                Los monitores se conectan al ordenador a través de una tarjeta gráfica (o adaptador o tarjeta de video).
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="Moni_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5">
+                        <img src="Imagenes/monitor.jpg" class="im6">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Teclado<br><br>
+                        <input type="button" value="Descripción ➪" onclick="Te()" class="boton"><br>
+                        <div id="te" class="ventana">
+                            <p>
+                                El teclado es un dispositivo de entrada que utiliza una disposición de teclas
+                                para que actúen como interruptores electrónicos que envían información a la computadora. 
+                                El teclado tiene entre 99 y 108 teclas y
+                                está dividido en cuatro bloques de funciones.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="Te_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5">
+                        <img src="Imagenes/teclado.jpg" class="im9">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Mouse o ratón<br><br>
+                        <input type="button" value="Descripción ➪" onclick="Mou()" class="boton"><br>
+                        <div id="mou" class="ventana">
+                            <p>
+                                El mouse es un dispositivo de entrada diseñado para manipular objetos en la pantalla de la computadora 
+                                y ayudarlo a usted, el usuario, a interactuar con la computadora.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="Mou_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5">
+                        <img src="Imagenes/mouse.jpg" class="im8">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Gabinete (cpu)<br><br>
+                        <input type="button" value="Descripción ➪" onclick="Ga()" class="boton"><br>
+                        <div id="ga" class="ventana">
+                            <p>
+                                Se trata de una extensión de espacio en la estructura de un monitor CRT o de 
+                                una pantalla LCD, en la cual se alojan los diversos dispositivos funcionales del equipo de cómputo.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="Ga_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5">
+                        <img src="Imagenes/gabinete1.jpg" class="im7">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Tarjeta madre o motherboard<br><br>
+                        <input type="button" value="Descripción ➪" onclick="Tar()" class="boton"><br>
+                        <div id="tar" class="ventana">
+                            <p>
+                                La tarjeta madre es la columna vertebral que une los componentes de la computadora en un mismo punto y
+                                les permite comunicarse entre sí. Sin ella,
+                                ninguna de las piezas de la computadora, como el CPU, la GPU o el disco duro no podrían interactuar.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="Tar_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5">
+                        <img src="Imagenes/tarjeta madre.jpg" class="im5">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Disipador de calor o ventilador<br><br>
+                        <input type="button" value="Descripción ➪" onclick="Dis()" class="boton"><br>
+                        <div id="dis" class="ventana">
+                            <p>
+                                El disipador de la CPU un elemento o pieza cuya misión es extraer el calor que genera el procesador.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="Dis_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5">
+                        <img src="Imagenes/ventilador.jpg" class="im6">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Memoria Ram<br><br>
+                        <input type="button" value="Descripción ➪" onclick="Mem()" class="boton"><br>
+                        <div id="mem" class="ventana">
+                            <p>
+                                La memoria de acceso aleatorio (RAM) es la memoria de la computadora que 
+                                almacena la información que un programa necesita mientras se ejecuta.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="Mem_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5">
+                        <img src="Imagenes/RAM.jpg" class="im3">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Memoria Rom<br><br>
+                        <input type="button" value="Descripción ➪" onclick="Memro()" class="boton"><br>
+                        <div id="memro" class="ventana">
+                            <p>
+                                La ROM es la memoria no volátil lo que significa que la información se almacena de forma permanente en el chip. 
+                                La memoria no depende de la corriente eléctrica para guardar los datos. 
+                                Al contrario, los datos se escriben en celdas individuales usando el código binario.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="Memro_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5">
+                        <img src="Imagenes/ROM.jpg" class="im4">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Disco duro<br><br>
+                        <input type="button" value="Descripción ➪" onclick="Disco()" class="boton"><br>
+                        <div id="disco" class="ventana">
+                            <p>
+                                El disco duro es el componente que almacena toda la información en la computadora, desde archivos hasta programas.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="Disco_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5">
+                        <img src="Imagenes/disco duro.jpg" class="im4">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Tarjeta de red<br><br>
+                        <input type="button" value="Descripción ➪" onclick="Red()" class="boton"><br>
+                        <div id="red" class="ventana">
+                            <p>
+                                Las tarjetas de red se encargan de preparar, transferir y controlar la información o datos que envía a 
+                                los otros equipos que están conectados en una misma red, no se trata de solo ordenadores, 
+                                también equipos como impresoras y discos duros externos pueden establecer una conexión.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="Red_cerrar()" class="boton">
+                         </div>
+                    </td>
+                    <td class="tab5">
+                        <img src="Imagenes/tarjeta de red.jpg" class="im3">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Bocinas<br><br>
+                        <input type="button" value="Descripción ➪" onclick="Bo()" class="boton"><br>
+                        <div id="bo" class="ventana">
+                            <p>
+                                Las bocinas te permiten escuchar diferentes clases de sonidos emitidos por la computadora, que en ocasiones indican algo en particular.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="Bo_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5">
+                        <img src="Imagenes/bocinas.jpg" class="im3">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Impresora<br><br>
+                        <input type="button" value="Descripción ➪" onclick="Im()" class="boton"><br>
+                        <div id="im" class="ventana">
+                            <p>
+                                La impresora es un periférico utilizado para imprimir información en papel, resultado del procesamiento de datos.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="Im_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5">
+                        <img src="Imagenes/impresora.jpg" class="im2">
+                    </td>
+                </tr>
+            </table><br>
+            <img class="im1" src="Imagenes/Datos_Curiosos/compu2.001.png" id="DCurioso"><br>
+            <a href="pro2.html" class="tt4">
+                <input type="button" value="Regresar↩" readonly class="inputOtras"></a><br><br>
+        </center>
+        <div class="ventanaIA">
+            <button class="preguntarIA" onclick="mostrarVentana()">💬 Preguntarle a la IA</button><br><br>
+            <div id="ventanaIA" class="panelIA" style="display: none;">
+                <div class="cabeceraIA">
+                    <h3 style="margin-left: 17%;"> Asistente de IA</h3>
+                    <button class="cerrarIA" onclick="cerrarVentana()">✖</button>
+                </div>
+                <div class="cuerpoIA">
+                    <textarea id="pregunta" placeholder="Escribe tu pregunta aquí..."></textarea>
+                    <button class="enviarIA" onclick="preguntarIA()">Enviar</button>
+                    <div id="respuesta" class="respuestaIA"></div>
+                </div>
+            </div>
+        </div>
+
+        <a href="Encuesta.html">
+            <input type="button" value="🚀Encuesta de satisfacción!!👍" readonly class="inputEncuesta">
+        </a>
+        <script src="ventana.js"></script>
+    </body>
+</html>

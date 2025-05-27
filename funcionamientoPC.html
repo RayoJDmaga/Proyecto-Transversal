@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>FUNCIONAMIENTO *pc</title>
+        <link rel="stylesheet" href="proTra.css">
+        <style>
+            .borrar {
+              opacity: 1;
+              animation: animacion 2s ease forwards;
+            }
+        </style>
+    </head>
+    <body class="aparecer">
+        <div class="menu-flotante">
+            <input value="Perzonalizar 🖌️▼" readonly onclick="AbrirMenu()" class="inputFlot"></input>
+            <button id="interesante" onclick="cambiarTema('interesante')" class="inputFlot venFlot">Interesante</button>
+            <button id="formal" onclick="cambiarTema('formal')" class="inputFlot venFlot">Formal</button>
+            <button id="oscuro" onclick="cambiarTema('oscuro')" class="inputFlot venFlot">Oscuro</button>
+            <button id="daltonico" onclick="cambiarTema('daltonico')" class="inputFlot venFlot">Daltónico</button>
+            <input id="quitar" value="Cerrar ▲" readonly onclick="CerrarMenu()" class="inputFlot venFlot"></input>
+        </div>    
+
+        <center>
+            <table class="tab">
+                <tr class="tab7">
+                    <td class="tab3"> Funcionamiento-</td>
+                    <td class="tab3">PC</td>
+                </tr>
+                <tr class="tab9">
+                    <td class="tab4"> Una computadora es una maquina concisa capaz de almacenar información digital y procesar varias instrucciones mediante 
+                        operaciones matemáticas y lógicas, nos facilita facilitar nuestra vida cotidiana, 
+                        almacenar datos, realizar tareas sencillas y nos sirve como medio de entretenimiento y herramienta de trabajo</td>
+                    <td class="tab4"><img src="Imagenes/funPC.jpeg"></td>
+                </tr>
+            </table>
+            <table class="tab">
+                <tr class="tab8">
+                        <td class="tab4"> Funcionamiento</td>
+                        <td class="tab4"> IMÁGEN</td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *RAM <br><br>
+                        <input type="button" value="Descripción ➪" onclick="FPC()" class="boton"><br>
+                        <div id="fpc" class="ventana">
+                            <p>
+                                La RAM (Random Acess Memory) esta en el medio del almacenamiento interno ósea la memoria a largo plazo y el procesador 
+                                Básicamente sirve para que en su lugar de cargar datos directamente de aquí al procesador los carguemos de aquí a la RAM el 
+                                procesador trabaja trabaje con ellos básicamente desde la RAM y luego cuando hace falta guardarlos para que no se borren nunca 
+                                más pues los meteríamos de nuevo en el almacenamiento de turno.
+                                
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="FPC_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5">
+                        <img src="Imagenes/FPC.png" class="im9">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Placa Base<br><br>
+                        <input type="button" value="Descripción ➪" onclick="FPC1()" class="boton"><br>
+                        <div id="fpc1" class="ventana">
+                            <p>
+                                Como la fuente de poder necesita llevar esa energía hacia nuestro ordenar necesita ser conectado en la Placa base en el 
+                                ATX o EPS o CPU, aquí regula la energía que necesita nuestro ordenador.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="FPC1_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5">
+                        <img src="Imagenes/FPC1.jpg">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *PCH<br><br>
+                        <input type="button" value="Descripción ➪" onclick="FPC2()" class="boton"><br>
+                        <div id="fpc2" class="ventana">
+                            <p>
+                                El PCH o Platform Controller Hub el controlador de la plataforma es básicamente a lo que se dedica es a captar todas las 
+                                señales de los USB del sonido, de la tarjeta de red etc.
+                                Básicamente de todos los periféricos que tenemos externos y el PCH gestiona quien y como se comunican con el procesador, 
+                                el PCH tiene una conexión directa con el procesador a través de unos Buse super rápidos lo cual se encarga de administras todas las conexiones.                                
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="FPC2_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5">
+                        <img src="Imagenes/FPC2.jpg">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Tarjeta Gráfica<br><br>
+                        <input type="button" value="Descripción ➪" onclick="FPC3()" class="boton"><br>
+                        <div id="fpc3" class="ventana">
+                            <p>
+                                Nos permite a conectarla a la Placa base en 	PCIE ahí tiene acceso directo al procesador para que la comunicación sea 
+                                directa.
+                                El procesador le pide a la tarjeta que cree pixeles para ver una imagen o visualizar un video esto tiene que ser muy rápido 
+                                extremadamente rápido y en tiempo real y con una gran cantidad de datos, el procesador repara todos los datos para que la 
+                                tarjeta necesita para nuestra memoria RAM los envía a la memoria de video de la tarjeta grafica y le manda instrucciones al 
+                                procesador grafico para ver los que necesita nuestra PC.
+                                
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="FPC3_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5">
+                        <img src="Imagenes/FPC3.jpg">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Fuente de poder<br><br>
+                        <input type="button" value="Descripción ➪" onclick="FPC4()" class="boton"><br>
+                        <div id="fpc4" class="ventana">
+                            <p>
+                                Lo que nos ayuda la Fuente de poder es convertir los Volteos que nos llegan de la calle y los transforman en distintas cantidades 
+                                para llevarla la corriente a nuestro ordenador.
+                                El procesador le pide a la tarjeta que cree pixeles para ver una imagen o visualizar un video esto tiene que ser muy rápido 
+                                extremadamente rápido y en tiempo real y con una gran cantidad de datos, el procesador repara todos los datos para que la tarjeta 
+                                necesita para nuestra memoria RAM los envía a la memoria de video de la tarjeta grafica y le manda instrucciones al procesador grafico 
+                                para ver los que necesita nuestra PC.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="FPC4_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5">
+                        <img src="Imagenes/FPC4.png" class="im10">
+                    </td>
+                </tr>
+            </table><br>
+            <img class="im1" src="Imagenes/Datos_Curiosos/compu2.001.png" id="DCurioso"><br>
+            <a href="pro2.html" class="tt4">
+                <input type="button" value="Regresar↩" readonly class="inputOtras"></a><br><br>
+        </center>
+        <div class="ventanaIA">
+            <button class="preguntarIA" onclick="mostrarVentana()">💬 Preguntarle a la IA</button><br><br>
+            <div id="ventanaIA" class="panelIA" style="display: none;">
+                <div class="cabeceraIA">
+                    <h3 style="margin-left: 17%;"> Asistente de IA</h3>
+                    <button class="cerrarIA" onclick="cerrarVentana()">✖</button>
+                </div>
+                <div class="cuerpoIA">
+                    <textarea id="pregunta" placeholder="Escribe tu pregunta aquí..."></textarea>
+                    <button class="enviarIA" onclick="preguntarIA()">Enviar</button>
+                    <div id="respuesta" class="respuestaIA"></div>
+                </div>
+            </div>
+        </div>
+
+        <a href="Encuesta.html">
+            <input type="button" value="🚀Encuesta de satisfacción!!👍" readonly class="inputEncuesta">
+        </a>
+        <script src="ventana.js"></script>
+    </body>
+</html>

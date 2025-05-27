@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> PRINCIPAL PROYECTO </title>
+        <link rel="stylesheet" href="proTra.css">
+        <style>
+            .borrar {
+              opacity: 1;
+              animation: animacion 2s ease forwards;
+            }
+        </style>
+        <script src="ventana.js"></script>
+    </head>
+    <body class="aparecer">
+        <div class="menu-flotante">
+            <input value="Perzonalizar 🖌️▼" readonly onclick="AbrirMenu()" class="inputFlot"></input>
+            <button id="interesante" onclick="cambiarTema('interesante')" class="inputFlot venFlot">Interesante</button>
+            <button id="formal" onclick="cambiarTema('formal')" class="inputFlot venFlot">Formal</button>
+            <button id="oscuro" onclick="cambiarTema('oscuro')" class="inputFlot venFlot">Oscuro</button>
+            <button id="daltonico" onclick="cambiarTema('daltonico')" class="inputFlot venFlot">Daltónico</button>
+            <input id="quitar" value="Cerrar ▲" readonly onclick="CerrarMenu()" class="inputFlot venFlot"></input>
+        </div>    
+        <div class="tab6">
+            <div class="tit"> ¿CÓMO ELEGIR UNA COMPUTADORA?</div>
+            <div><img class="im3" src="Imagenes/compu2.png" ></div>
+        </div><br>
+            <p class="sub"> Para comenzar debes de saber que hay 2 tipos de computadoras,
+                PC(Computadora de escritorio) y laptop (computadora portátil). <br>
+                La diferencia es que la PC es mucho más robusta y puede hacer tareas más pesadas, 
+                mientras que la laptop es más portatil y <br>se puede llevar de un lado a otro,
+                ideal para estudiantes y personas que no tengan un lugar de trabajo fijo.
+            </p>
+        
+        <div class="tabb6">
+                <div class="OtrosRecursosTD"><img class="im10" src="../Imagenes/Datos_Curiosos/compu2.025.png" id="DCurioso"></div>
+                <div class="OtrosRecursosTD">
+                    <table class="Equi">
+                        <tr> <td class="tt1"> EQUIPO </td> </tr>
+                        <tr> <td class="tt"><a href="equipoPC.html">
+                            <input type="button" value="*PC 🖥️" readonly class="inputEquipo">
+                        </a></td> </tr>
+                        <tr> <td class="tt"><a href="equipoLaptop.html">
+                            <input type="button" value="*LAPTOP 💻" readonly class="inputEquipo">
+                        </a></td> </tr>
+                    </table>
+                </div>
+                <div class="OtrosRecursosTD">
+                    <table class="Fun">
+                        <tr> <td class="tt2">FUNCIONAMIENTO </td> </tr>
+                        <tr> <td class="tt3"><a href="funcionamientoPC.html">
+                            <input type="button" value="*PC 🖥️" readonly class="inputEquipo">
+                        </a></td><tr>
+                        <tr> <td class="tt3"><a href="funcionamientoLaptop.html">
+                            <input type="button" value="*LAPTOP 💻" readonly class="inputEquipo">
+                        </a> </td><tr>
+                    </table>
+                </div>
+        </div>
+        <div class="OtrosRecursosTD"><img class="im10A" src="../Imagenes/Datos_Curiosos/compu2.025.png" id="DCurioso"></div><br>
+        <center>
+            <a href="Otras.html" class="tt5">
+                <input type="button" value="🌐 Explora más sobre las computadoras 🖱️" readonly class="inputOtras">
+            </a><br><br><br>
+            <center>
+                <div class="spinner" id="spinner">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </center><br><br>
+        <table>
+            <tr>
+                <td class="menuTabla">
+                    <a href="pro2.html">
+                        <input type="button" value="¿Qué debes saber de las computadoras?" readonly class="inputMenu">
+                        </a>
+                </td>
+                <td class="menuTabla">
+                    <a href="pro2.1.html">
+                        <input type="button" value="¿Cómo elegir una computadora?" readonly class="inputMenu1">
+                    </a>
+                </td>
+                <td class="menuTabla">
+                    <a href="pro2.2.html">
+                        <input type="button" value="¿Cómo utilizar una computadora?" readonly class="inputMenu">
+                    </a>
+                </td>
+            </tr>
+        </table><br><br>
+        <a href="Encuesta.html">
+            <input type="button" value="🚀Encuesta de satisfacción!!👍" readonly class="inputEncuesta">
+        </a>
+        </center>
+        <div class="ventanaIA">
+            <button class="preguntarIA" onclick="mostrarVentana()">💬 Preguntarle a la IA</button><br><br>
+            <div id="ventanaIA" class="panelIA" style="display: none;">
+                <div class="cabeceraIA">
+                    <h3 style="margin-left: 17%;"> Asistente de IA</h3>
+                    <button class="cerrarIA" onclick="cerrarVentana()">✖</button>
+                </div>
+                <div class="cuerpoIA">
+                    <textarea id="pregunta" placeholder="Escribe tu pregunta aquí..."></textarea>
+                    <button class="enviarIA" onclick="preguntarIA()">Enviar</button>
+                    <div id="respuesta" class="respuestaIA"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="ventanaIA">
+        <input onclick="mostrarVentana()" value="Preguntarle a la IA 🤔" readonly class="preguntarIA"></input>
+            <div id="ventanaIA" style="display: none;">
+                <textarea id="pregunta" placeholder="Escribe tu pregunta aquí..."></textarea>
+                <button onclick="preguntarIA()">Enviar</button>
+                <div id="respuesta" style="margin-top: 10px; font-weight: bold;"></div>
+                <input onclick="cerrarVentana()" value="Cerrar ❌" readonly class="preguntarIA"></input>
+            </div>
+        </div> -->
+
+        <a href="https://visitorbadge.io/status?path=https%3A%2F%2Frayojdmaga.github.io%2FProyecto-Transversal%2Fpro2.html"><img src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Frayojdmaga.github.io%2FProyecto-Transversal%2Fpro2.html&labelColor=%23697689&countColor=%23263759" />
+        </a>
+    </body> 
+</html>

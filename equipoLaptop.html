@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>EQUIPO *Laptop</title>
+        <link rel="stylesheet" href="proTra.css">
+        <style>
+            .borrar {
+              opacity: 1;
+              animation: animacion 2s ease forwards;
+            }
+        </style>
+    </head>
+    <body class="aparecer">
+        <div class="menu-flotante">
+            <input value="Perzonalizar 🖌️▼" readonly onclick="AbrirMenu()" class="inputFlot"></input>
+            <button id="interesante" onclick="cambiarTema('interesante')" class="inputFlot venFlot">Interesante</button>
+            <button id="formal" onclick="cambiarTema('formal')" class="inputFlot venFlot">Formal</button>
+            <button id="oscuro" onclick="cambiarTema('oscuro')" class="inputFlot venFlot">Oscuro</button>
+            <button id="daltonico" onclick="cambiarTema('daltonico')" class="inputFlot venFlot">Daltónico</button>
+            <input id="quitar" value="Cerrar ▲" readonly onclick="CerrarMenu()" class="inputFlot venFlot"></input>
+        </div>    
+
+        <center>
+            <table class="tab">
+                <tr class="tab1">
+                    <td class="tab3"> Equipo -
+                    <td class="tab3">Laptop
+                </tr>
+                <tr class="tab2">
+                    <td class="tab4"> NOMBRE</td>
+                    <td class="tab4"> IMÁGEN</td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Pantalla<br><br>
+                    <input type="button" value="Descripción ➪" onclick="A()" class="boton"><br><br>
+                        <div id="a" class="ventana">
+                            <p>
+                                El monitor del computador, también conocido como pantalla, muestra la información de tu equipo como imágenes y textos, que son generados gracias a una tarjeta de video que se encuentra en el interior.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="A_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5"><img src="Imagenes/lap pantalla.jpg" class="im3"></td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Teclado<br><br>
+                    <input type="button" value="Descripción ➪" onclick="B()" class="boton"><br><br>
+                        <div id="b" class="ventana">
+                            <p>
+                                Un teclado realiza sus funciones mediante un micro controlador. Estos micro controladores tienen un programa instalado para su funcionamiento, estos mismos programas son ejecutados y realizan la exploración matricial de las teclas cuando se presiona alguna.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="B_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5"><img src="Imagenes/lap teclado.jpg" class="im9"></td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Touchpad<br><br>
+                    <input type="button" value="Descripción ➪" onclick="C()" class="boton"><br><br>
+                        <div id="c" class="ventana">
+                            <p>
+                                Es un dispositivo señalador con un sensor táctil que le permite controlar el cursor o el puntero del mouse para seleccionar texto, íconos, archivos, etc.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="C_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5"><img src="Imagenes/lap touchpad.jpg" class="im8"></td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *puertos <br><br>
+                    <input type="button" value="Descripción ➪" onclick="D()" class="boton"><br><br>
+                        <div id="d" class="ventana">
+                            <p>
+                                Un puerto de computadora es un “punto de conexión o interfaz entre una computadora y un dispositivo interno o externo”. En español, esto quiere decir que puedes usar un puerto para conectar diferentes aparatos a tu laptop.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="D_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5"><img src="Imagenes/lap entradas.jpg" class="im2"></td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Tarjeta madre o motherboard<br><br>
+                    <input type="button" value="Descripción ➪" onclick="E()" class="boton"><br><br>
+                        <div id="e" class="ventana">
+                            <p>
+                                Es una placa de circuito impreso principal de una computadora, lo que significa que es la pieza principal de los circuitos a la que se conectan las demás piezas que crean el conjunto.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="E_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5"><img src="Imagenes/lap motherboard.jpg" class="im3"></td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Ventilador y ranura de ventilación<br><br>
+                    <input type="button" value="Descripción ➪" onclick="F()" class="boton"><br><br>
+                        <div id="f" class="ventana">
+                            <p>
+                                Lo que hacen este tipo de aparatos es recoger el propio aire caliente de las rejillas del portátil para disiparlo.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="F_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5"><img src="Imagenes/lap ventilador.jpg" class="im3"></td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Memoria Ram<br><br>
+                    <input type="button" value="Descripción ➪" onclick="G()" class="boton"><br><br>
+                        <div id="g" class="ventana">
+                            <p>
+                                Proporciona un acceso rápido y almacenamiento temporal de datos en las computadoras. La memoria RAM se encuentra entre el procesador y el almacenamiento permanente de datos, como un HDD / SSD.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="G_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5"><img src="Imagenes/lap RAM.jpg" class="im3"></td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Batería<br><br>
+                    <input type="button" value="Descripción ➪" onclick="H()" class="boton"><br><br>
+                        <div id="h" class="ventana">
+                            <p>
+                                Es un componente de hardware que suministra energía a un dispositivo para que pueda funcionar sin un cable de alimentación. Las baterías pueden alimentar un ordenador portátil durante varias horas.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="H_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5"><img src="Imagenes/lap bateria.jpg" class="im2"></td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Disco duro<br><br>
+                    <input type="button" value="Descripción ➪" onclick="I()" class="boton"><br><br>
+                        <div id="i" class="ventana">
+                            <p>
+                                Un disco duro es un dispositivo de almacenamiento de datos no volátil que emplea un sistema de grabación magnética para almacenar datos digitales de forma rápida y segura.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="I_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5"><img src="Imagenes/disco duro.jpg" class="im3"></td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Cámara web<br><br>
+                    <input type="button" value="Descripción ➪" onclick="J()" class="boton"><br><br>
+                        <div id="j" class="ventana">
+                            <p>
+                                Una cámara funciona similar a nuestros ojos: se encarga de recibir los rayos de luz del exterior y los transforma en una imagen.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="J_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5"><img src="Imagenes/lap camara.jpg" class="im2"></td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Altavoces<br><br>
+                    <input type="button" value="Descripción ➪" onclick="K()" class="boton"><br><br>
+                        <div id="k" class="ventana">
+                            <p>
+                                Un altavoz es un transductor electro acústico, es decir, convierte energía eléctrica en energía acústica. Esta conversión tiene lugar en dos etapas: la señal eléctrica produce el movimiento del diafragma del altavoz y este movimiento produce a su vez ondas de presión (sonido) en el aire que rodea al altavoz.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="K_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5"><img src="Imagenes/lap altavoces.jpg" class="im2"></td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Lector CD<br><br>
+                    <input type="button" value="Descripción ➪" onclick="L()" class="boton"><br><br>
+                        <div id="l" class="ventana">
+                            <p>
+                                Es el dispositivo óptico capaz de reproducir los CD de audio, de video, de datos, etc. utilizando un láser que le permite leer la información contenida en dichos discos.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="L_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5"><img src="Imagenes/lap lectorcd.jpg" class="im2"></td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Carcasa o cubierta<br><br>
+                    <input type="button" value="Descripción ➪" onclick="M()" class="boton"><br><br>
+                        <div id="m" class="ventana">
+                            <p>
+                                Es un accesorio que sirve para proteger los componentes de tu laptop, y pueden ayudarte a reparar o renovar tu equipo en caso de que se haya dañado o desgastado por el uso.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="M_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5"><img src="Imagenes/lap carcasa.jpg" class="im11"></td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Procesador<br><br>
+                    <input type="button" value="Descripción ➪" onclick="N()" class="boton"><br><br>
+                        <div id="n" class="ventana">
+                            <p>
+                                Una unidad central de procesamiento, o CPU, es una pieza de hardware que permite que tu computadora interactúe con todas las aplicaciones y programas instalados. Una CPU interpreta las instrucciones del programa y crea la señal de pantalla con la que interactúas cuando utilizas una computadora.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="N_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5"><img src="Imagenes/lap procesador.jpg" class="im2"></td>
+                </tr>
+                <tr>
+                    <td class="tab5"> *Fuente de poder o cargador<br><br>
+                    <input type="button" value="Descripción ➪" onclick="O()" class="boton"><br><br>
+                        <div id="o" class="ventana">
+                            <p>
+                                Garantiza un suministro de energía estable y confiable a todos los componentes de un PC, incluidos el procesador, la tarjeta gráfica, los discos duros y otros dispositivos.
+                            </p>
+                            <input type="button" value="Cerrar ￩" onclick="O_cerrar()" class="boton">
+                        </div>
+                    </td>
+                    <td class="tab5"><img src="Imagenes/lap cargador.jpg" class="im12"></td>
+                </tr>
+            </table><br>
+            <img src="Imagenes/Datos_Curiosos/compu2.001.png" class="im1"><br>
+            <a href="pro2.html" class="tt4" id="DCurioso">
+                <input type="button" value="Regresar↩" readonly class="inputOtras"></a><br><br>
+        </center>
+        <div class="ventanaIA">
+            <button class="preguntarIA" onclick="mostrarVentana()">💬 Preguntarle a la IA</button><br><br>
+            <div id="ventanaIA" class="panelIA" style="display: none;">
+                <div class="cabeceraIA">
+                    <h3 style="margin-left: 17%;"> Asistente de IA</h3>
+                    <button class="cerrarIA" onclick="cerrarVentana()">✖</button>
+                </div>
+                <div class="cuerpoIA">
+                    <textarea id="pregunta" placeholder="Escribe tu pregunta aquí..."></textarea>
+                    <button class="enviarIA" onclick="preguntarIA()">Enviar</button>
+                    <div id="respuesta" class="respuestaIA"></div>
+                </div>
+            </div>
+        </div>
+
+        <a href="Encuesta.html">
+            <input type="button" value="🚀Encuesta de satisfacción!!👍" readonly class="inputEncuesta">
+        </a>
+        <script src="ventana.js"></script>
+    </body>
+</html>
